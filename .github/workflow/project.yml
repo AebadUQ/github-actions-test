@@ -1,0 +1,15 @@
+name: Testing Project
+on: push
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout To Project
+      uses: actions/checkout@v3
+    - name: Installing NodeJs
+      uses: actions/setup-node@v3
+      with:
+        node-module: 18
+    - name: Installing Dependencies
+      run: npm ci
+    - name: Deploy
+      run: echo "Deploying"
