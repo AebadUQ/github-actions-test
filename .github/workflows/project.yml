@@ -9,7 +9,7 @@ jobs:
       - name: Installing NodeJs
         uses: actions/setup-node@v3
         with:
-          node-module: 18
+          node-version: 18
       - name: Installing Dependencies
         run: npm ci
       - name: Running Linting
