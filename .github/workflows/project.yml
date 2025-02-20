@@ -12,5 +12,9 @@ jobs:
           node-module: 18
       - name: Installing Dependencies
         run: npm ci
+      - name: Running Test 
+        run: npm test
+      - name: Running Linting
+        run: npm run lint
       - name: Deploy
         run: echo "Deploying"
